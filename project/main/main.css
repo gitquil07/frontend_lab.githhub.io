@@ -1,0 +1,189 @@
+body{
+    margin: 0px;
+    background-image: url("https://images.alphacoders.com/434/434004.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sidebar{
+    border: 2px solid black;
+    height: 660px;
+    width: 300px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.main{
+    margin: 0px 300px 0px 300px;
+    border: 2px solid black;
+    height: 660px; 
+}
+.footer{
+    margin: 0px;
+    border: 2px solid black;
+    background-color: #1E1E1E;
+}
+.sidebar .light_container{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.sidebar .light_container li{
+    width: 0px;
+    height: 39px;
+    display: block;
+    background-color: rgb(88, 195, 245);
+    box-shadow: 0px 2px 30px rgb(119, 202, 240);
+}
+.light_container:first-child{
+    margin-top: 70px;
+}
+.left .light_container li{
+    margin: 35px 0px 0px 50px;
+    border-bottom-right-radius: 40px 25px;
+    transform: rotate(-30deg);
+}
+.right .light_container li{
+    margin: 35px 0px 0px 50px;
+    border-bottom-left-radius: 40px 25px;
+    transform: rotate(30deg);
+}
+.main p{
+    text-align: left;
+}
+#logo{
+    margin: 200px 0px 0px 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+#description{
+    margin: 20px 400px 0px 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight:500;
+    color: rgb(255, 255, 255);
+}
+#launch_button{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 200px;
+    width: 100px;
+    height: 40px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 20px 30px;
+    border-bottom-left-radius: 20px 30px;
+    border: 2px solid #858d8b;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    color: rgb(88, 195, 245);
+
+    transition-property: border;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+#launch_button:hover{
+    border-color: rgb(88, 195, 245);
+    cursor: pointer;
+    color: #000000;
+}
+#launch_button::after{
+    display: block;
+    content: "Launch";
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 24px;
+    line-height: 40px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 0px;
+    background-color: rgb(88, 195, 245);
+    
+    transition-property: height;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+    transition-delay: 0.4s;
+}
+#launch_button:hover::after{
+    height: 40px;
+}
+form{
+    position: relative;
+}
+form div{
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    top: 45px;
+    left: 222px;
+}
+#launch_button:focus{
+    outline: none;
+}
+#launch_button a{
+    text-decoration: none;
+    color: rgb(88, 195, 245);
+}
+.footer ul{
+    display: inline-block;
+    margin: 0px 10px 0px 30px;
+    padding: 0px;
+    list-style-type: none;
+    margin-right: 20px;
+}
+@font-face {
+    font-family: 'Noto Sans JP';
+    src: url("Noto_Sans_JP/NotoSansJP-Light.otf");
+}
+.footer ul li{
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Noto Sans JP';
+}
+.middle li{
+    height: 30px;
+}
+.e-mail input{
+    display: block;
+    width: 250px;
+    height: 30px;
+    background-color: #1E1E1E;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.2);
+    font-family: Arial;
+}
+.e-mail input:focus{
+    outline: none;
+}
+.e-mail #sign_up_button{
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(88, 195, 245);
+    font-weight: bold;
+    box-shadow: 0px 0px 15px rgb(119, 202, 240);
+}
+.e-mail #sign_up_button a{
+    text-decoration: none;
+    color: #000000;
+}    
+.e-mail #sign_up_button:hover{
+    cursor: pointer;
+}
+.e-mail #sign_up_button:focus{
+    outline: none;
+}

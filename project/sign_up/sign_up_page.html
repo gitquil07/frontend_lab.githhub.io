@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li style="margin-left: 1000px;"><a href="">Main</a></li>
+                    <li><a href="">Materials</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="sign_up_zone">
+            <ul>
+                <li id="head"></li>
+                <li id="body"></li>
+            </ul>
+            <form autocomplete="off">
+                <p>
+                    <p><label for="login">Login</label></p>
+                    <input type="text" id="login" placeholder="Input login" class="inputs">
+                </p>
+                <p>
+                    <p><label for="email">E-mail address</label></p>
+                    <input type="email" id="email" placeholder="Input your e-mail address" class="inputs">
+                </p>
+                <p>
+                    <p><label for="password">Password</label></p>
+                    <input type="password" id="password" placeholder="Make a password" class="inputs">
+                </p>
+                <p>
+                    <p><label for="password_check">Repeat your password</label></p>
+                    <input type="text" id="password_check" class="inputs" placeholder="Repeating">
+                </p>
+                <p>
+                    <button id="sign_up_button" onclick="formChecking()">Sign Up</button>
+                </p>
+            </form>
+        </div>
+        <script>
+            function formChecking(){
+                var login = document.getElementById("login").textContent;
+                var email = document.getElementById("email").textContent;
+                var password = document.getElementById("password");
+                var passwordValidator = document.getElementById("password_check");
+                if(login != "" && email != "" && password.textContent != "" && passwordValidator.textContent != ""){
+                    if(password.textContent == passwordValidator.textContent){
+                        alert("You are log in");
+                    }
+                    else{
+                        alert("Validator find errors");
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

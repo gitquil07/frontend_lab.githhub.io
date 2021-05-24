@@ -1,0 +1,131 @@
+body{
+    margin: 0px;
+    background-image: url("https://images.alphacoders.com/434/434004.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    border: 1px solid silver;
+}
+header ul{
+    list-style-type: none;
+    padding: 0px;
+}
+header nav ul li{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border-radius: 9px;
+
+    transition-property: box-shadow;
+    transition-timing-function: linear;
+    transition-duration: 0.2s;
+}
+header nav ul li:hover{
+    box-shadow: 0px 10px 14px rgba(88, 195, 245, 1);
+    cursor: pointer;
+}
+header nav ul li a{
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+}
+header nav ul li a:hover{
+    color: rgba(88, 195, 245, 1);
+
+}
+.sign_up_zone{
+    border: 1px solid silver;
+    margin: 50px 550px ;
+    text-align: center;
+    background-color: #1E1E1E;
+    border-radius: 5px 5px;
+    color: rgb(88, 195, 245);
+}
+.sign_up_zone p{
+    margin-bottom: 10px;
+}
+.sign_up_zone p label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.inputs{
+    width: 250px;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    color: silver;
+    border-width: 0px 0px 2px 0px;
+    border-color: #333333;
+    background-color: #1E1E1E;
+    
+    transition-property: border;
+    transition-timing-function: linear;
+    transition-duration: 0.2s;
+}
+.inputs:focus{
+    outline: none;
+    border-color: rgb(88, 195, 245);
+}
+#sign_up_button{
+    width: 250px;
+    height: 35px;
+    border-bottom-right-radius: 60px 35px;
+    border-bottom-left-radius: 60px 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: silver;
+    background-color: #1E1E1E;
+    border: none;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333333;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+
+    transition-property: border;
+    transition-timing-function: linear;
+    transition-duration: 0.2s;
+}
+#sign_up_button:hover{
+    cursor: pointer;
+}
+#sign_up_button:focus{
+    outline: none;
+    color: rgb(88, 195, 245);
+    border-color: rgb(88, 195, 245);
+}
+.sign_up_zone ul{
+    list-style-type: none;
+    padding: 0px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: rgb(88, 195, 245);
+    margin: 30px 0px 20px 154px;
+    position: relative;
+    overflow: hidden;
+}
+.sign_up_zone ul #head{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1E1E1E;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+.sign_up_zone ul #body{
+    width: 135px;
+    height: 100px;
+    position: absolute;
+    top: 91px;
+    left: 22px;
+    background-color: #1E1E1E;
+    border-top-left-radius: 65px 70px;
+    border-top-right-radius: 65px 70px;
+}
